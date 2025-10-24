@@ -6,7 +6,7 @@ export default function App() {
 
   const getTasks = async () => {
     try {
-      const result = await axios.get("http://localhost:8080/api/tasks");
+      const result = await axios.get("http://task-backend-live-fd9c602f448f.herokuapp.com/api/tasks");
       setTasks(result.data);
     } catch (e) {
       console.error("Error fetching tasks:", e.message);
